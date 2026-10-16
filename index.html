@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ming's Asian Kitchen | Pan-Asian & Cozy Thai in Marietta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bistro-bg font-sans selection:bg-red-100 selection:text-red-900">
+
+    <!-- Top Accent Bar (Classic Warm Red & Gold) -->
+    <div class="h-1.5 w-full bg-red-700 fixed top-0 left-0 z-50"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-1.5 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="font-serif text-2xl font-bold tracking-tight text-stone-900">
+                    Ming's Asian Kitchen<span class="text-red-600">.</span>
+                </span>
+            </div>
+            <nav class="space-x-8 hidden md:flex text-xs tracking-[0.2em] uppercase text-stone-600 font-semibold">
+                <a href="#about" class="hover:text-red-600 transition">About</a>
+                <a href="#menu" class="hover:text-red-600 transition">Menu Highlights</a>
+                <a href="#visit" class="hover:text-red-600 transition">Visit Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-44 pb-28 px-6 text-center border-b border-stone-200 bg-stone-50/50">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <span class="inline-block bg-red-50 text-red-700 border border-red-200 text-xs uppercase tracking-[0.3em] px-4 py-1.5 rounded-full font-bold">
+                Marietta, Georgia • Pan-Asian & Cozy Thai
+            </span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold tracking-tight text-stone-900">
+                Fresh Flavors & <span class="italic font-normal text-red-700">Authentic Thai Classics</span>
+            </h1>
+            <p class="text-stone-600 font-light text-lg max-w-2xl mx-auto leading-relaxed">
+                "Awesome food and super friendly staff." Enjoy neighborhood favorite Pan-Asian dishes, spicy drunken noodles, and sesame chicken made fresh to order.
+            </p>
+            <div class="pt-6 flex justify-center gap-4 flex-wrap">
+                <a href="#menu" class="bg-stone-900 text-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-red-700 transition duration-300 shadow-md">
+                    View Menu Favorites
+                </a>
+                <a href="#visit" class="border border-stone-300 bg-white text-stone-800 px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-stone-50 transition duration-300 shadow-sm">
+                    Hours & Location
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-28">
+
+        <!-- About Section (Photo Slot 1: Storefront) -->
+        <section id="about" class="bg-white border border-stone-200 rounded-2xl p-8 md:p-14 shadow-xl grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-red-700 font-bold">Local Neighborhood Spot</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-stone-900">Cozy Atmosphere & Excellent Flavors</h2>
+                <p class="text-stone-600 font-light leading-relaxed text-sm">
+                    Located conveniently at Woodlawn & Lower Roswell Road, Ming's Asian Kitchen delivers great portion sizes, fresh herbs like real Thai basil, and comforting Pan-Asian specialties prepared by a dedicated team.
+                </p>
+                <div class="pt-2 border-t border-stone-100 space-y-2 text-sm text-stone-700 font-medium">
+                    <p><strong class="text-stone-900">Address:</strong> 4665 Lower Roswell Rd #101, Marietta, GA</p>
+                    <p><strong class="text-stone-900">Price Range:</strong> $10 – $20 per person</p>
+                    <p class="text-stone-900 pt-1">✓ Dine-in & Takeout Available</p>
+                </div>
+            </div>
+            <!-- Photo Slot 1 -->
+            <div class="bg-white h-80 rounded-xl border border-stone-200 flex items-center justify-center overflow-hidden relative shadow-inner">
+                <img src="storefront.jpg" alt="Ming's Asian Kitchen Storefront" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- Menu Highlights Section (Photo Slots 2, 3, 4) -->
+        <section id="menu" class="space-y-12">
+            <div class="text-center space-y-3">
+                <span class="text-xs uppercase tracking-[0.3em] text-red-700 font-bold">Popular Dishes</span>
+                <h2 class="font-serif text-4xl text-stone-900">Chef & Customer Favorites</h2>
+                <p class="text-stone-600 text-sm max-w-lg mx-auto">From fiery stir-fries to crispy favorites loved by local guides.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dish 1 (Photo Slot 2) -->
+                <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 space-y-4">
+                    <div class="h-64 rounded-lg bg-white border border-stone-200 flex items-center justify-center overflow-hidden relative">
+                        <img src="noodles.jpg" alt="Spicy Thai Drunken Noodles" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-serif text-xl text-stone-900 font-bold">Spicy Drunken Noodles</h3>
+                        <span class="bg-red-100 text-red-800 font-bold text-[10px] tracking-wider px-2.5 py-0.5 rounded-full">POPULAR</span>
+                    </div>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Wide flat rice noodles tossed with savory sauce, fresh vegetables, and your choice of protein with a kick of heat.
+                    </p>
+                </div>
+
+                <!-- Dish 2 (Photo Slot 3) -->
+                <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 space-y-4">
+                    <div class="h-64 rounded-lg bg-white border border-stone-200 flex items-center justify-center overflow-hidden relative">
+                        <img src="chicken.jpg" alt="Spicy Sesame Chicken" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-serif text-xl text-stone-900 font-bold">Spicy Sesame Chicken</h3>
+                        <span class="bg-stone-100 text-stone-800 font-bold text-[10px] tracking-wider px-2.5 py-0.5 rounded-full">TOP SELLER</span>
+                    </div>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Crispy chicken coated in a perfectly balanced sweet and spicy sesame glaze, heavily praised by local reviewers.
+                    </p>
+                </div>
+
+                <!-- Dish 3 (Photo Slot 4) -->
+                <div class="bg-white border border-stone-200 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 space-y-4">
+                    <div class="h-64 rounded-lg bg-white border border-stone-200 flex items-center justify-center overflow-hidden relative">
+                        <img src="beef.jpg" alt="Thai Basil Beef" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-baseline">
+                        <h3 class="font-serif text-xl text-stone-900 font-bold">Thai Basil Beef</h3>
+                        <span class="bg-red-100 text-red-800 font-bold text-[10px] tracking-wider px-2.5 py-0.5 rounded-full">FRESH HERBS</span>
+                    </div>
+                    <p class="text-stone-600 text-xs leading-relaxed font-light">
+                        Sautéed tender beef seasoned with aromatic garlic, chili, and real fresh Thai basil leaves for authentic flavor.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vibe Section / Final Photo Slot (Photo Slot 5) -->
+        <section class="bg-stone-50 border border-stone-200 rounded-2xl p-8 md:p-12 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+            <!-- Photo Slot 5 -->
+            <div class="h-72 rounded-xl bg-white border border-stone-200 flex items-center justify-center overflow-hidden relative shadow-sm">
+                <img src="vibe.jpg" alt="Restaurant Interior Vibe" class="w-full h-full object-cover">
+            </div>
+            <div class="space-y-4">
+                <span class="text-xs uppercase tracking-[0.3em] text-red-700 font-bold">Dine-In & Takeout</span>
+                <h3 class="font-serif text-2xl md:text-3xl text-stone-900">Experience Great Food Locally</h3>
+                <p class="text-stone-600 text-sm font-light leading-relaxed">
+                    Whether you are grabbing a quick weeknight takeout order or sitting down for dinner with friends, Ming's Asian Kitchen offers welcoming service and reliable favorites right in Marietta.
+                </p>
+                <div class="text-stone-800 font-semibold text-sm pt-2">
+                    <p>📞 Phone: (770) 693-9452</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Us & Hours Section -->
+        <section id="visit" class="bg-white border border-stone-200 rounded-2xl p-8 md:p-14 shadow-xl grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-red-700 font-bold">Location & Hours</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-stone-900">Stop By Today</h2>
+                <p class="text-stone-600 font-light leading-relaxed text-sm">
+                    Conveniently located at Woodlawn & Lower Roswell. Drop by for lunch or dinner to experience authentic Pan-Asian cuisine.
+                </p>
+                <div class="space-y-2 text-sm text-stone-700 font-medium">
+                    <p><strong class="text-stone-900">Hours:</strong> Opens daily at 11:30 AM</p>
+                    <p><strong class="text-stone-900">Service:</strong> Dine-in and Takeout</p>
+                </div>
+            </div>
+            <div class="bg-stone-50 p-8 rounded-xl border border-stone-200 space-y-4 shadow-sm">
+                <h3 class="font-serif text-xl text-stone-900 font-bold">Contact Info</h3>
+                <div class="space-y-3 text-sm text-stone-600 font-light pt-2">
+                    <p><strong class="text-stone-900 font-medium">Address:</strong> 4665 Lower Roswell Rd #101, Marietta, GA 30068</p>
+                    <p><strong class="text-stone-900 font-medium">Phone:</strong> (770) 693-9452</p>
+                    <p class="text-red-700 font-semibold pt-2">✓ Great Portions & Excellent Flavors</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200 bg-stone-100 py-12 text-center text-stone-500 text-xs tracking-widest uppercase space-y-2">
+        <div class="h-1 w-16 bg-red-700 mx-auto rounded-full mb-3"></div>
+        <p>&copy; 2026 Ming's Asian Kitchen. All rights reserved.</p>
+        <p class="text-red-700 lowercase tracking-normal font-medium">Designed for local neighborhood favorites.</p>
+    </footer>
+
+</body>
+</html>

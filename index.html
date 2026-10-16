@@ -51,10 +51,10 @@
         </div>
     </header>
 
-    <!-- Hero Section with 6-Photo Abstract Grid Background -->
+    <!-- Hero Section with Brighter Photo Grid Background -->
     <section class="relative pt-44 pb-32 px-6 text-center border-b border-stone-200 overflow-hidden bg-stone-900">
-        <!-- Background 6-Photo Grid -->
-        <div class="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 opacity-25 filter blur-[1px] scale-105 pointer-events-none">
+        <!-- Background 6-Photo Grid (Increased opacity so photos are much more visible) -->
+        <div class="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1 opacity-50 filter saturate-125 scale-105 pointer-events-none">
             <img src="Screenshot 2026-10-16 004127.png" class="w-full h-full object-cover">
             <img src="Screenshot 2026-10-16 004111.png" class="w-full h-full object-cover">
             <img src="Screenshot 2026-10-16 004047.png" class="w-full h-full object-cover">
@@ -62,24 +62,25 @@
             <img src="Screenshot 2026-10-16 004029.png" class="w-full h-full object-cover">
             <img src="Screenshot 2026-10-16 004016.png" class="w-full h-full object-cover">
         </div>
-        <div class="absolute inset-0 bg-stone-950/80 backdrop-blur-[2px]"></div>
+        <!-- Lighter, softer dark overlay so the food shows through clearly -->
+        <div class="absolute inset-0 bg-stone-950/60 backdrop-blur-[1px]"></div>
 
         <!-- Hero Content -->
         <div class="relative z-10 max-w-4xl mx-auto space-y-6">
-            <span class="inline-block bg-red-500/20 text-red-300 border border-red-500/30 text-xs uppercase tracking-[0.3em] px-4 py-1.5 rounded-full font-bold">
+            <span class="inline-block bg-red-500/30 text-red-200 border border-red-500/40 text-xs uppercase tracking-[0.3em] px-4 py-1.5 rounded-full font-bold shadow-sm">
                 Marietta, Georgia • Pan-Asian & Cozy Thai
             </span>
-            <h1 class="font-serif text-5xl md:text-7xl font-bold tracking-tight text-white">
+            <h1 class="font-serif text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-md">
                 Fresh Flavors & <span class="italic font-normal text-red-400">Authentic Classics</span>
             </h1>
-            <p class="text-stone-300 font-light text-lg max-w-2xl mx-auto leading-relaxed">
+            <p class="text-stone-100 font-light text-lg max-w-2xl mx-auto leading-relaxed drop-shadow">
                 "Awesome food and super friendly staff." Enjoy neighborhood favorite Pan-Asian dishes, spicy drunken noodles, sesame chicken, and more made fresh to order.
             </p>
             <div class="pt-6 flex justify-center gap-4 flex-wrap">
-                <a href="#menu" class="bg-red-700 text-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-red-600 transition duration-300 shadow-md">
+                <a href="#menu" class="bg-red-700 text-white px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-red-600 transition duration-300 shadow-lg">
                     Explore Full Menu
                 </a>
-                <a href="#visit" class="border border-stone-700 bg-stone-900/50 text-stone-200 px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-stone-800 transition duration-300 shadow-sm">
+                <a href="#visit" class="border border-stone-500 bg-stone-900/70 text-stone-100 px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold rounded-lg hover:bg-stone-800 transition duration-300 shadow-md">
                     Hours & Location
                 </a>
             </div>

@@ -118,7 +118,7 @@
             <!-- Category Navigation Buttons -->
             <div class="flex justify-center gap-2 flex-wrap pb-4">
                 <button id="btn-appetizers" onclick="switchTab('appetizers')" class="tab-btn bg-red-700 text-white shadow-md px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-bold transition">Appetizers</button>
-                <button id="btn-noodles" onclick="switchTab('noodles')" class="tab-btn bg-stone-100 text-stone-700 hover:bg-stone-200 px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-bold transition">Noodles</button>
+                <button id="btn-noodles" onclick="switchTab('noodles')" class="tab-btn bg-stone-100 text-stone-700 hover:bg-stone-200 px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-bold transition">Noodles & Soups</button>
                 <button id="btn-fried-rice" onclick="switchTab('fried-rice')" class="tab-btn bg-stone-100 text-stone-700 hover:bg-stone-200 px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-bold transition">Fried Rice</button>
                 <button id="btn-chefs" onclick="switchTab('chefs')" class="tab-btn bg-stone-100 text-stone-700 hover:bg-stone-200 px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-bold transition">Chef's Highlights</button>
                 <button id="btn-thai" onclick="switchTab('thai')" class="tab-btn bg-stone-100 text-stone-700 hover:bg-stone-200 px-5 py-2.5 rounded-full text-xs uppercase tracking-wider font-bold transition">Thai Favorites</button>
@@ -134,43 +134,225 @@
                     <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Appetizers</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="border-b border-stone-100 pb-4">
-                            <h4 class="font-bold text-stone-900 text-base">Crispy Spring Rolls</h4>
-                            <p class="text-xs text-stone-600 mt-1">Lightly fried rolls stuffed with seasoned vegetables and glass noodles.</p>
+                            <h4 class="font-bold text-stone-900 text-base">Soup Of The Day</h4>
+                            <p class="text-xs text-stone-600 mt-1">Made in house daily. Whole-heartedly.</p>
                         </div>
                         <div class="border-b border-stone-100 pb-4">
-                            <h4 class="font-bold text-stone-900 text-base">Pork Dumplings (Steamed or Fried)</h4>
-                            <p class="text-xs text-stone-600 mt-1">Hand-wrapped dumplings served with savory dipping sauce.</p>
+                            <h4 class="font-bold text-stone-900 text-base">Crispy Mini Rolls</h4>
+                            <p class="text-xs text-stone-600 mt-1">House-made petite crispy rolls filled with seasoned minced chicken and shrimp. Served with sweet red chili sauce.</p>
                         </div>
                         <div class="border-b border-stone-100 pb-4">
-                            <h4 class="font-bold text-stone-900 text-base">Crumb-Fried Calamari</h4>
-                            <p class="text-xs text-stone-600 mt-1">Tender squid rings fried to golden perfection with sweet chili sauce.</p>
+                            <h4 class="font-bold text-stone-900 text-base">Traditional Chinese Pork Dumplings</h4>
+                            <p class="text-xs text-stone-600 mt-1">Mixed and made in house from scratch! Served with garlic soy dipping sauce. Choice of steamed or fried.</p>
                         </div>
                         <div class="border-b border-stone-100 pb-4">
-                            <h4 class="font-bold text-stone-900 text-base">Spicy Gourmet String Beans</h4>
-                            <p class="text-xs text-stone-600 mt-1">Fresh green beans wok-tossed with pickled cabbage and jalapeños.</p>
+                            <h4 class="font-bold text-stone-900 text-base">Vegetable Dumplings</h4>
+                            <p class="text-xs text-stone-600 mt-1">Served with garlic soy dipping sauce. Choice of steamed or fried.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Steamed Edamame</h4>
+                            <p class="text-xs text-stone-600 mt-1">Steamed soybean pods sprinkled with salt.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Spicy Sichuan Wontons</h4>
+                            <p class="text-xs text-stone-600 mt-1">Mixed and made in house from scratch... Steamed chicken and shrimp-filled wontons sprinkled with onions. Served with chili soy sauce.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Thai Chicken Satay</h4>
+                            <p class="text-xs text-stone-600 mt-1">Marinated with spices and coconut milk, skewered, then grilled. Served with seasoned peanut sauce.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Minced Chicken Lettuce Wraps</h4>
+                            <p class="text-xs text-stone-600 mt-1">Minced chicken sautéed with scallions, carrots, and celery in a semi-sweet and spicy sauce. Served with fresh lettuce.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4 md:col-span-2">
+                            <h4 class="font-bold text-stone-900 text-base">Soft Basil Rolls</h4>
+                            <p class="text-xs text-stone-600 mt-1">Traditional soft Vietnamese rolls made with grilled pork and shrimp, vermicelli, and fresh vegetables wrapped in rice paper. Served with traditional 3-flavor dipping sauce.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Noodles -->
+                <!-- Noodles & Soups -->
                 <div id="noodles" class="menu-category hidden space-y-6">
-                    <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Noodles</h3>
+                    <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Noodles & Soups</h3>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="border-b border-stone-100 pb-4">
-                            <h4 class="font-bold text-stone-900 text-base">Spicy Drunken Noodles</h4>
-                            <p class="text-xs text-stone-600 mt-1">Wide flat rice noodles tossed with savory sauce, fresh vegetables, and chili heat.</p>
+                            <h4 class="font-bold text-stone-900 text-base">Jiampong Spicy Korean Ramen Noodle Soup</h4>
+                            <p class="text-xs text-stone-600 mt-1">Savory Korean-inspired spicy chili broth enveloping assorted seafood, ramen wheat noodles, and vegetables (bamboo shoots, Napa cabbage, onions, woodear mushrooms, and zucchini).</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Vietnamese Pho Noodle Soup</h4>
+                            <p class="text-xs text-stone-600 mt-1">House-made from scratch slow-simmered beef bone broth, infused with fragrant herbs and spices, enveloping a variety of beef cuts, beef meatballs, and traditional pho rice noodles.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Vietnamese Lemongrass Vermicelli</h4>
+                            <p class="text-xs text-stone-600 mt-1">Marinated beef sautéed with lemongrass, onions, and red bell peppers atop fresh vegetables and traditional vermicelli noodles with 3-flavor dipping sauce.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Spicy Thai Drunken Noodles</h4>
+                            <p class="text-xs text-stone-600 mt-1">Wheat noodles stir-fried with fresh basil, Thai chili spice, and vegetables. Choice of tofu, chicken, beef, or shrimp.</p>
                         </div>
                         <div class="border-b border-stone-100 pb-4">
                             <h4 class="font-bold text-stone-900 text-base">Pad Thai</h4>
-                            <p class="text-xs text-stone-600 mt-1">Traditional stir-fried rice noodles with eggs, bean sprouts, scallions, and crushed peanuts.</p>
+                            <p class="text-xs text-stone-600 mt-1">Traditional rice noodles stir-fried with chicken, shrimp, bean sprouts, spring onions, peanuts, eggs, and hints of sweetness and garlic.</p>
                         </div>
                         <div class="border-b border-stone-100 pb-4">
-                            <h4 class="font-bold text-stone-900 text-base">Lo Mein</h4>
-                            <p class="text-xs text-stone-600 mt-1">Soft wheat noodles tossed with fresh vegetables in a classic brown sauce.</p>
+                            <h4 class="font-bold text-stone-900 text-base">House Stir-Fried Ramien</h4>
+                            <p class="text-xs text-stone-600 mt-1">Ramen wheat noodles stir-fried with vegetables. Choice of tofu, chicken, beef, or shrimp.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Fried Rice -->
                 <div id="fried-rice" class="menu-category hidden space-y-6">
-                    <h3 class="font-serif text-2xl text-stone-900 font
+                    <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Fried Rice</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Spicy Nasi Goreng Indonesian Fried Rice</h4>
+                            <p class="text-xs text-stone-600 mt-1">Stir-fried with shrimp, chicken, zucchini, mushrooms, peas, and carrots. Flavored with semi-sweet soy sauce and spices, topped with a fried egg and sprinkled dried onions.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Spicy Thai Basil Fried Rice</h4>
+                            <p class="text-xs text-stone-600 mt-1">Stir-fried with basil, string beans, red bell peppers, onions, and jalapenos with Thai chili paste, topped with a fried egg. Choice of tofu, chicken, beef, or shrimp.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Traditional Chinese Fried Rice</h4>
+                            <p class="text-xs text-stone-600 mt-1">Stir-fried with peas, carrots, eggs, & onions. Choice of chicken, beef, or shrimp.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Vegetable Fried Rice</h4>
+                            <p class="text-xs text-stone-600 mt-1">Stir-fried with eggs and assorted vegetables.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chef's Highlights -->
+                <div id="chefs" class="menu-category hidden space-y-6">
+                    <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Chef's Highlights</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Hunan Combination</h4>
+                            <p class="text-xs text-stone-600 mt-1">Classic, savory Hunan sauce with shrimp, chicken, beef, and mixed vegetables.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Spicy Kung Pao Triple Delight</h4>
+                            <p class="text-xs text-stone-600 mt-1">Shrimp, chicken, and beef sautéed with bell peppers, chili peppers, onions, and peanuts.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Spicy Sesame Chicken</h4>
+                            <p class="text-xs text-stone-600 mt-1">Crispy chicken coated in a perfectly balanced sweet and spicy sesame glaze.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thai Favorites -->
+                <div id="thai" class="menu-category hidden space-y-6">
+                    <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Thai Favorites</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Thai Basil Beef</h4>
+                            <p class="text-xs text-stone-600 mt-1">Sautéed tender beef seasoned with aromatic garlic, chili, and real fresh Thai basil leaves.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Green Curry</h4>
+                            <p class="text-xs text-stone-600 mt-1">Coconut milk infused with green curry paste, bamboo shoots, zucchini, and basil.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Red Curry</h4>
+                            <p class="text-xs text-stone-600 mt-1">Rich red curry paste in coconut milk with bell peppers, bamboo shoots, and fresh basil.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chinese Favorites -->
+                <div id="chinese" class="menu-category hidden space-y-6">
+                    <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Chinese Favorites</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Mongolian Beef</h4>
+                            <p class="text-xs text-stone-600 mt-1">Sautéed with spring onions and white onions in a light, semi-sweet brown sauce.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Spicy Sichuan</h4>
+                            <p class="text-xs text-stone-600 mt-1">Semi-sweet and spicy with garlic, jalapeños, mushrooms, onions, snow peas, and red bell peppers.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Broccoli Stir-Fry</h4>
+                            <p class="text-xs text-stone-600 mt-1">Fresh broccoli florets and carrots wok-tossed in a classic garlic-infused brown sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div id="drinks" class="menu-category hidden space-y-6">
+                    <h3 class="font-serif text-2xl text-stone-900 font-bold border-b border-stone-100 pb-3">Drinks</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Thai Iced Tea</h4>
+                            <p class="text-xs text-stone-600 mt-1">Sweet, creamy traditional brewed Thai tea served over ice.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Hot Green Tea</h4>
+                            <p class="text-xs text-stone-600 mt-1">Soothing brewed green tea served hot.</p>
+                        </div>
+                        <div class="border-b border-stone-100 pb-4">
+                            <h4 class="font-bold text-stone-900 text-base">Assorted Soft Drinks & Bottled Water</h4>
+                            <p class="text-xs text-stone-600 mt-1">Selection of canned and bottled sodas.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Vibe Section / Final Photo Slot -->
+        <section class="bg-stone-50 border border-stone-200 rounded-2xl p-8 md:p-12 shadow-sm grid md:grid-cols-2 gap-8 items-center">
+            <div class="h-72 rounded-xl bg-stone-100 border border-stone-200 flex items-center justify-center overflow-hidden relative shadow-sm">
+                <img src="vibe.jpg" alt="Restaurant Interior Vibe" class="w-full h-full object-cover">
+            </div>
+            <div class="space-y-4">
+                <span class="text-xs uppercase tracking-[0.3em] text-red-700 font-bold">Dine-In & Takeout</span>
+                <h3 class="font-serif text-2xl md:text-3xl text-stone-900">Experience Great Food Locally</h3>
+                <p class="text-stone-600 text-sm font-light leading-relaxed">
+                    Whether you are grabbing a quick weeknight takeout order or sitting down for dinner with friends, Ming's Asian Kitchen offers welcoming service and reliable favorites right in Marietta.
+                </p>
+                <div class="text-stone-800 font-semibold text-sm pt-2">
+                    <p>📞 Phone: (770) 693-9452</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Us & Hours Section -->
+        <section id="visit" class="bg-white border border-stone-200 rounded-2xl p-8 md:p-14 shadow-xl grid md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <span class="text-xs uppercase tracking-[0.3em] text-red-700 font-bold">Location & Hours</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-stone-900">Stop By Today</h2>
+                <p class="text-stone-600 font-light leading-relaxed text-sm">
+                    Conveniently located at Woodlawn & Lower Roswell. Drop by for lunch or dinner to experience authentic Pan-Asian cuisine.
+                </p>
+                <div class="space-y-2 text-sm text-stone-700 font-medium">
+                    <p><strong class="text-stone-900">Hours:</strong> Opens daily at 11:30 AM</p>
+                    <p><strong class="text-stone-900">Service:</strong> Dine-in and Takeout</p>
+                </div>
+            </div>
+            <div class="bg-stone-50 p-8 rounded-xl border border-stone-200 space-y-4 shadow-sm">
+                <h3 class="font-serif text-xl text-stone-900 font-bold">Contact Info</h3>
+                <div class="space-y-3 text-sm text-stone-600 font-light pt-2">
+                    <p><strong class="text-stone-900 font-medium">Address:</strong> 4665 Lower Roswell Rd #101, Marietta, GA 30068</p>
+                    <p><strong class="text-stone-900 font-medium">Phone:</strong> (770) 693-9452</p>
+                    <p class="text-red-700 font-semibold pt-2">✓ Great Portions & Excellent Flavors</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200 bg-stone-100 py-12 text-center text-stone-500 text-xs tracking-widest uppercase space-y-2">
+        <div class="h-1 w-16 bg-red-700 mx-auto rounded-full mb-3"></div>
+        <p>&copy; 2026 Ming's Asian Kitchen. All rights reserved.</p>
+        <p class="text-red-700 lowercase tracking-normal font-medium">Designed for local neighborhood favorites.</p>
+    </footer>
+
+</body>
+</html>
